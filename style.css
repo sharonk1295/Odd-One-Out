@@ -207,8 +207,8 @@ body {
 }
 .office-modal {
     background-color: whitesmoke;
-    height: 450px;
-    width: 650px;
+    height: 500px;
+    width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -231,6 +231,38 @@ body {
     margin-top: 50px;
 }
 .office-btns {
-    padding: 20px;
-    margin: 12px auto;
+    /* display: flex;
+    justify-content: space-around; */
+    /* padding: 40px; */
+    margin: 10px auto;
+    cursor: pointer;
+    /* width: 220px;
+    height: 220px; */
+    height: 150px; /*200px;*/
+    width: 220px; /*250px;*/
+    /* overflow: hidden; */
+    border-radius: 10px;
+    background-size: cover;
+}
+#jim {
+    background-image: url("images/officejim.jpg");
+    /* width: 200px;
+    height: 180px; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    /* height: 140px;
+    object-fit: cover;
+    background-repeat: no-repeat; */
+    /* background-position: fixed;  */
+}
+#michael {
+    background-image: url("images/officemichael.png");
+    max-width: 100%;
+    height: auto;
+    /* width: 100%; */
+    /* height: 140px; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /* background-position: fixed;  */
 }
