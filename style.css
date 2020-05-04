@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid thistle; */
+}
+
+body {
+    background: repeating-linear-gradient(
+    to right,
+    #B17693,
+    #B5BDCA 50px,
+    #88BDCA 50px,
+    #88BDCA 60px);
+}
+
+/* ===== HOME PAGE ===== */
+
+.header {
+    text-align: center;
+    margin-top: 30%;
+}
+.home-page-text {
+    line-height: 70px;
+}
+.home-page-text>h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 120px;
+    color: rgb(21, 124, 138);
+    text-shadow: 2px 2px #B5BDCA;
+}
+.home-page-text>h3 {
+    font-family: 'Boogaloo', cursive;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: rgb(54, 38, 38);
+}
+
+/* ===== INSTRUCTIONS MODAL ===== */
+
+.instructions {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+.instructions-text {
+    background-color: rgb(206, 203, 212);
+    height: 350px;
+    width: 550px;
+    border-radius: 12px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+
+.instructions-text>h1 {
+    padding: 12px;
+    text-align: center;
+}
+
+.instructions-btn {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.header-buttons {
+    padding: 14px 18px;
+    background-color: rgb(152, 171, 180);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: 2px solid rgb(30, 103, 151);
+}

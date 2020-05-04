@@ -14,6 +14,8 @@
 
     <!-- ====== My CSS and JS ====== -->
     <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,27 +24,26 @@
         <div class="home-page">
             <div class="home-page-text">
                 <h1>ODD ONE OUT!</h1>
-                <h3>Find the one that doesn't belong.</h3>
+                <h3>Find the one that doesn't belong</h3>
             </div>
             <div class="home-page-btn">
-                <button id="lets-go">Let's Go!</button>
+                <button class="header-buttons" id="lets-go">Let's Go!</button>
             </div>
         </div>
         <div class="instructions">
             <div class="instructions-text">
-                <div class="welcome-text">
-                    <p>Welcome! Throughout the years, our society has undergone much media reformation. From entering Phase 4 of the Marvel Cinematic Universe to opening our ears to the global sensation K-Pop group, BTS, we're experiencing many productions. BUT, have you really been paying attention to the media trends? Let's put your knowledge to the test!</p>
-                </div>
-                <div class="rules">
-                    <h4>You will:</h4>
-                    <p>First, pick a category. Next, click on your topic of choice. Then, make sure to click on the character/item that does not belong to your topic of choice. Choose correctly and you win the game, else, you need to study more!</p>
+                <h1>Welcome!</h1>
+                <p>Throughout the years, our society has undergone much media reformation. From entering Phase 4 of the Marvel Cinematic Universe to opening our ears to the global sensation K-Pop group, BTS, we're experiencing many productions. BUT, have you really been paying attention to the media trends? Let's put your knowledge to the test!</p>
+                <h1>You will:</h1>
+                <p>First, pick a category. Next, click on your topic of choice. Then, make sure to click on the character/item that does not belong to your topic of choice. Choose correctly and you win the game, else, you need to study more!</p>
+                <div class="instructions-btn">
+                    <button class="header-buttons" id="close-inst-btn">Got It!</button>
                 </div>
             </div>
-            <button id="close-inst-btn">OK</button>
         </div>
     </div>
      <!-- ===== PICK A CATEGORY PAGE ===== -->
-    <div class="main">
+    <!-- <div class="main">
         <div class="category-page">
             <h2>Pick a Category:</h2>
             <div class="pick-category">
@@ -60,52 +61,70 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
      <!-- ===== THE TRIVIA GAME ===== -->
-    <div class="game">
+    <!-- <div class="game"> -->
         <!-- ===== THE OFFICE ===== -->
-        <div class="the-office">
+        <!-- <div class="the-office">
             <h1>THE OFFICE</h1>
-            <button id="jim">IMG HERE</button>
-            <button id="michael">IMG HERE</button>
-            <button id="dwight">IMG HERE</button>
-            <button id="chris">IMG HERE</button>
+            <div class="office-choices">
+                <button id="jim">IMG HERE</button>
+                <button id="michael">IMG HERE</button>
+                <button id="dwight">IMG HERE</button>
+                <button id="chris">IMG HERE</button>
+            </div>
         </div>
+        </div> -->
         <!-- ===== MARVEL ===== -->
-        <div class="marvel-avengers">
-            <button id="captain">IMG HERE</button>
-            <button id="ironman">IMG HERE</button>
-            <button id="blackpanther">IMG HERE</button>
-            <button id="batman">IMG HERE</button>
-        </div>
+        <!-- <div class="marvel-avengers">
+            <h1>Marvel's The Avengers</h1>
+            <div class="marvel-choices">
+                <button id="captain">IMG HERE</button>
+                <button id="ironman">IMG HERE</button>
+                <button id="blackpanther">IMG HERE</button>
+                <button id="batman">IMG HERE</button>
+            </div>
+        </div> -->
         <!-- ===== FROZEN ===== -->
-        <div class="frozen-film">
-            <button id="elsa">IMG HERE</button>
-            <button id="anna">IMG HERE</button>
-            <button id="olaf">IMG HERE</button>
-            <button id="dwarf">IMG HERE</button>
-        </div>
+        <!-- <div class="frozen-film">
+            <h1>FROZEN</h1>
+            <div class="frozen-choices">
+                <button id="elsa">IMG HERE</button>
+                <button id="anna">IMG HERE</button>
+                <button id="olaf">IMG HERE</button>
+                <button id="dwarf">IMG HERE</button>
+            </div>    
+        </div> -->
         <!-- ===== BTS ===== -->
-        <div class="BTS-members">
-            <button id="jungkook">IMG HERE</button>
-            <button id="v">IMG HERE</button>
-            <button id="jimin">IMG HERE</button>
-            <button id="sehun">IMG HERE</button>
-        </div>
+        <!-- <div class="BTS-members">
+            <h1>BTS</h1>
+            <div class="BTS-choices">
+                <button id="jungkook">IMG HERE</button>
+                <button id="v">IMG HERE</button>
+                <button id="jimin">IMG HERE</button>
+                <button id="sehun">IMG HERE</button>
+            </div>
+        </div> -->
         <!-- ===== BRITNEY SPEARS ===== -->
-        <div class="britney-songs">
-            <button id="toxic">Toxic</button>
-            <button id="crazy">Crazy</button>
-            <button id="oops">Oops...I Did It Again</button>
-            <button id="dualipa">Don't Start Now</button>
-        </div>
+        <!-- <div class="britney-songs">
+            <h1>Britney Spears</h1>
+            <div class="britney-choices">
+                <button id="toxic">Toxic</button>
+                <button id="crazy">Crazy</button>
+                <button id="oops">Oops...I Did It Again</button>
+                <button id="dualipa">Don't Start Now</button>
+            </div>
+        </div> -->
         <!-- ===== COLLABORATIONS ===== -->
-        <div class="collab">
-            <button id="collab1">I Don't Care</button>
-            <button id="collab2">Senorita</button>
-            <button id="collab3">Boy With Luv</button>
-            <button id="edsheeran">Thinking Out Loud</button>
-        </div>
-    </div>
+        <!-- <div class="collab">
+            <h1>COLLABORATIONS</h1>
+            <div class="collab-choices">
+                <button id="collab1">I Don't Care</button>
+                <button id="collab2">Senorita</button>
+                <button id="collab3">Boy With Luv</button>
+                <button id="edsheeran">Thinking Out Loud</button>
+            </div>
+        </div> -->
+    <!-- </div> -->
 </body>
 </html>
