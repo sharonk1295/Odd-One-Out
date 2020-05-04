@@ -8,10 +8,12 @@
 body {
     background: repeating-linear-gradient(
     to right,
-    #B17693,
-    #B5BDCA 50px,
-    #88BDCA 50px,
-    #88BDCA 60px);
+    rgb(221,227,109),
+    #B5BDCA 120px,
+    #B17693 50px,
+    #B17693 60px);
+    /* background-color: rgb(221,227,109);  #B5BDCA, #B17693*/
+    /* background-color: rgb(44, 114, 143); */
 }
 
 /* ===== HOME PAGE ===== */
@@ -20,20 +22,47 @@ body {
     text-align: center;
     margin-top: 30%;
 }
+/* to make home page not move when you expand the browser
+.home-page {
+    position: fixed;
+    text-align: center;
+} */
 .home-page-text {
     line-height: 70px;
 }
 .home-page-text>h1 {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 120px;
-    color: rgb(21, 124, 138);
+    font-size: 130px;
+    color: rgb(54, 38, 38);
     text-shadow: 2px 2px #B5BDCA;
 }
+.weird {
+    color: red;
+    /* animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: 2; */
+}
 .home-page-text>h3 {
-    font-family: 'Boogaloo', cursive;
+    font-family: 'Knewave', cursive;
     letter-spacing: 2px;
     font-size: 30px;
-    color: rgb(54, 38, 38);
+    /* color: rgb(54, 38, 38); */
+    /* rgb(155,79,221) */
+    color: rgb(155,79,221);
+}
+
+@keyframes rainbow {
+    0% { background: black; }
+    10% { background: crimson; }
+    25% { background: hotpink;}
+    30% { background: coral;}
+    40% { background: lightyellow; }
+    50% { background: palegreen; }
+    60% { background: mediumaquamarine; }
+    75% { background: steelblue; }
+    80% { background: darkviolet;}
+    90% { background: black; }
+    100% { background: ghostwhite; }
 }
 
 /* ===== INSTRUCTIONS MODAL ===== */
@@ -51,7 +80,7 @@ body {
 }
 
 .instructions-text {
-    background-color: rgb(206, 203, 212);
+    background-color: whitesmoke;
     height: 350px;
     width: 550px;
     border-radius: 12px;
@@ -81,4 +110,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     outline: 2px solid rgb(30, 103, 151);
+}
+#lets-go {
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: 100;
+}
+
+@keyframes blink {
+    0% {background-color: rgb(94,194,201)}
+    25% {background-color: rgb(112,157,183)}
+    50% {background-color: rgb(94,194,201)}
+    75% {background-color: rgb(112,157,183)}
+    100% {background-color: rgb(94,194,201)}
 }
