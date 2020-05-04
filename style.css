@@ -21,10 +21,11 @@ body {
 .header {
     text-align: center;
     margin-top: 30%;
+    /* position: relative; */
 }
-/* to make home page not move when you expand the browser
-.home-page {
-    position: fixed;
+/* to make home page not move when you expand the browser */
+/* .home-page {
+    position: absolute;
     text-align: center;
 } */
 .home-page-text {
@@ -38,9 +39,6 @@ body {
 }
 .weird {
     color: red;
-    /* animation-name: rainbow;
-    animation-duration: 10s;
-    animation-iteration-count: 2; */
 }
 .home-page-text>h3 {
     font-family: 'Knewave', cursive;
@@ -49,20 +47,6 @@ body {
     /* color: rgb(54, 38, 38); */
     /* rgb(155,79,221) */
     color: rgb(155,79,221);
-}
-
-@keyframes rainbow {
-    0% { background: black; }
-    10% { background: crimson; }
-    25% { background: hotpink;}
-    30% { background: coral;}
-    40% { background: lightyellow; }
-    50% { background: palegreen; }
-    60% { background: mediumaquamarine; }
-    75% { background: steelblue; }
-    80% { background: darkviolet;}
-    90% { background: black; }
-    100% { background: ghostwhite; }
 }
 
 /* ===== INSTRUCTIONS MODAL ===== */
@@ -78,7 +62,6 @@ body {
     overflow: auto;
     display: none;
 }
-
 .instructions-text {
     background-color: whitesmoke;
     height: 350px;
@@ -89,17 +72,14 @@ body {
     padding: 3%;
     line-height: 120%;
 }
-
 .instructions-text>h1 {
     padding: 12px;
     text-align: center;
 }
-
 .instructions-btn {
     text-align: right;
     padding-top: 20px;
 }
-
 .header-buttons {
     padding: 14px 18px;
     background-color: rgb(152, 171, 180);
@@ -116,11 +96,99 @@ body {
     animation-duration: 3s;
     animation-iteration-count: 100;
 }
-
 @keyframes blink {
     0% {background-color: rgb(94,194,201)}
     25% {background-color: rgb(112,157,183)}
     50% {background-color: rgb(94,194,201)}
     75% {background-color: rgb(112,157,183)}
     100% {background-color: rgb(94,194,201)}
+}
+
+/* ===== CATEGORIES PAGE ===== */
+
+.main {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.category-page {
+    background-color: whitesmoke;
+    height: 450px;
+    width: 650px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+.category-page>h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Monoton', cursive;
+    /* font-family: 'Fredericka the Great', cursive; */
+}
+.pick-category {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto;
+}
+.tv-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+.tv-movie>h2 {
+    font-size: 35px;
+    font-family: 'Cantora One', sans-serif;
+    text-align: center;
+}
+.tv-movie-choices {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+.music>h2 {
+    font-size: 35px;
+    font-family: 'Cantora One', sans-serif;
+    text-align: center;
+}
+.music-choices {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+.category-buttons {
+    padding: 13px 10px;
+    margin: 12px auto;
+    background-color: rgb(102, 61, 112);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+    /* outline: 2px dashed rgb(192, 184, 184); */
+}
+.category-buttons:hover {
+    /* background-color: rgb(223, 168, 236); */
+    background-color: rgb(82, 189, 114);
 }
