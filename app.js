@@ -8,6 +8,8 @@ $(() => {
     const $instructions = $('.instructions');
     const $closeBtn = $('#close-inst-btn');
     const $categoryPage = $('.main');
+    const $officeBtn = $('#office');
+    const $officeGame = $('.the-office')
 
     // Functions/ Event Handlers 
     const openInstructions = () => {
@@ -25,9 +27,15 @@ $(() => {
         $instructions.css('display', 'none');
         goToCategories();
     }
+    const openTheOffice = () => {
+        //console.log('working');
+        $officeGame.css('display', 'block');
+        $categoryPage.css('display', 'none');
+    }
 
     // Event Listeners
     $openBtn.on('click', openInstructions);
     $closeBtn.on('click', closeInstructions);
+    $officeBtn.on('click', openTheOffice)
 
 })
