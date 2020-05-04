@@ -9,7 +9,10 @@ $(() => {
     const $closeBtn = $('#close-inst-btn');
     const $categoryPage = $('.main');
     const $officeBtn = $('#office');
-    const $officeGame = $('.the-office')
+    const $officeGame = $('.the-office');
+    const $marvelBtn = $('#marvel');
+    const $marvelGame = $('.marvel-avengers');
+    
 
     // Functions/ Event Handlers 
     const openInstructions = () => {
@@ -32,10 +35,22 @@ $(() => {
         $officeGame.css('display', 'block');
         $categoryPage.css('display', 'none');
     }
+    const openMarvel = () => {
+        // console.log('working')
+        $marvelGame.css('display', 'block');
+        $categoryPage.css('display', 'none');
+    }
+    const openFrozen = () => {
+        //console.log('working')
+        $('.frozen-film').css('display', 'block');
+        $categoryPage.css('display', 'none');
+    }
 
     // Event Listeners
     $openBtn.on('click', openInstructions);
     $closeBtn.on('click', closeInstructions);
-    $officeBtn.on('click', openTheOffice)
+    $officeBtn.on('click', openTheOffice);
+    $marvelBtn.on('click', openMarvel);
+    $('#frozen').on('click', openFrozen);
 
 })

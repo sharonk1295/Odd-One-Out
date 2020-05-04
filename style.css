@@ -97,11 +97,11 @@ body {
     animation-iteration-count: 100;
 }
 @keyframes blink {
-    0% {background-color: rgb(94,194,201)}
+    0% {background-color: rgb(87, 217, 226)}
     25% {background-color: rgb(112,157,183)}
-    50% {background-color: rgb(94,194,201)}
+    50% {background-color: rgb(87, 217, 226)}
     75% {background-color: rgb(112,157,183)}
-    100% {background-color: rgb(94,194,201)}
+    100% {background-color: rgb(87, 217, 226)}
 }
 
 /* ===== CATEGORIES PAGE ===== */
@@ -236,33 +236,136 @@ body {
     /* padding: 40px; */
     margin: 10px auto;
     cursor: pointer;
-    /* width: 220px;
-    height: 220px; */
-    height: 150px; /*200px;*/
-    width: 220px; /*250px;*/
-    /* overflow: hidden; */
+    height: 150px; 
+    width: 220px; 
     border-radius: 10px;
     background-size: cover;
 }
 #jim {
     background-image: url("images/officejim.jpg");
-    /* width: 200px;
-    height: 180px; */
-    object-fit: cover;
-    background-repeat: no-repeat;
-    /* width: 100%; */
-    /* height: 140px;
-    object-fit: cover;
-    background-repeat: no-repeat; */
-    /* background-position: fixed;  */
 }
 #michael {
     background-image: url("images/officemichael.png");
-    max-width: 100%;
-    height: auto;
-    /* width: 100%; */
-    /* height: 140px; */
-    object-fit: cover;
-    background-repeat: no-repeat;
-    /* background-position: fixed;  */
+}
+#dwight {
+    background-image: url("images/officedwight.jpg");
+}
+#chris {
+    background-image: url("images/notoffice.jpg");
+}
+
+/* ===== MARVEL AVENGERS ===== */
+.marvel-avengers {
+    background-color: rgba(145, 141, 141, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.marvel-modal {
+    background-color: whitesmoke;
+    height: 500px;
+    width: 700px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+.marvel-modal>h1 {
+    text-align: center;
+    margin: 10px 0 0 15px;
+}
+.marvel-modal>h3 {
+    text-align: center;
+    margin: 20px auto;
+}
+.marvel-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.marvel-btns {
+    margin: 10px auto;
+    cursor: pointer;
+    height: 150px; 
+    width: 220px; 
+    border-radius: 10px;
+    background-size: cover;
+}
+#captain {
+    background-image: url('images/marvelcaptain.jpg');
+}
+#ironman {
+    background-image: url('images/marvelironman.jpg');
+}
+#blackpanther {
+    background-image: url('images/marvelpanther.jpg');
+}
+#batman {
+    background-image: url('images/notmarvel.jpg');
+}
+
+/* ===== FROZEN ===== */
+.frozen-film {
+    background-color: rgba(145, 141, 141, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.frozen-modal {
+    background-color: whitesmoke;
+    height: 500px;
+    width: 700px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+.frozen-modal>h1 {
+    text-align: center;
+    margin: 10px 0 0 15px;
+}
+.frozen-modal>h3 {
+    text-align: center;
+    margin: 20px auto;
+}
+.frozen-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.frozen-btns {
+    margin: 10px auto;
+    cursor: pointer;
+    height: 150px; 
+    width: 220px; 
+    border-radius: 10px;
+    background-size: cover;
+}
+#troll {
+    background-image: url('images/frozentroll.png');
+}
+#tangled {
+    background-image: url('images/notfrozen.jpg');
+}
+#anna {
+    background-image: url('images/frozenanna.jpg');
+}
+#olaf {
+    background-image: url('images/frozenolaf.jpg');
 }
