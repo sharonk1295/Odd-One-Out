@@ -153,11 +153,13 @@ body {
     font-size: 35px;
     font-family: 'Cantora One', sans-serif;
     text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 .tv-movie-choices {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 28px;
 }
 .music {
     display: flex;
@@ -168,6 +170,8 @@ body {
     font-size: 35px;
     font-family: 'Cantora One', sans-serif;
     text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 .music-choices {
     display: flex;
@@ -181,11 +185,12 @@ body {
     border: none;
     border-radius: 15px;
     color: white;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Mouse Memoirs', sans-serif;
     letter-spacing: 3px;
     cursor: pointer;
+    width: 14em;
     /* outline: 2px dashed rgb(192, 184, 184); */
 }
 .category-buttons:hover {
@@ -197,6 +202,13 @@ body {
     padding: 6px;
     border-radius: 3px;
     margin-bottom: 3px;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    outline: 2px solid rgb(57, 162, 248);
+}
+.back-btn:hover {
+    background-color: whitesmoke;
+    color: rgb(37, 36, 36);
 }
 
 /* ===== THE OFFICE ===== */
@@ -212,7 +224,7 @@ body {
     display: none;
 }
 .office-modal {
-    background-color: whitesmoke;
+    background-color: rgb(205, 181, 137);
     height: 530px;
     width: 700px;
     border-radius: 12px;
@@ -225,6 +237,9 @@ body {
 .office-modal>h1 {
     text-align: center;
     margin: 10px 0 0 15px;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    padding-bottom: 15px;
 }
 .office-modal>h3 {
     text-align: center;
@@ -234,7 +249,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .office-btns {
     /* display: flex;
@@ -273,7 +288,9 @@ body {
     display: none;
 }
 .marvel-modal {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-image: url('images/avengers.jpg');
+    background-size: cover;
     height: 530px;
     width: 700px;
     border-radius: 12px;
@@ -282,10 +299,14 @@ body {
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     padding: 3%;
     line-height: 120%;
+    color: whitesmoke;
 }
 .marvel-modal>h1 {
     text-align: center;
     margin: 10px 0 0 15px;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    padding-bottom: 10px;
 }
 .marvel-modal>h3 {
     text-align: center;
@@ -331,8 +352,10 @@ body {
     display: none;
 }
 .frozen-modal {
-    background-color: whitesmoke;
-    height: 530px;
+    /* background-color: whitesmoke; */
+    background-image: url('images/frozen_snowflake.jpg');
+    background-size: cover;
+    height: 535px;
     width: 700px;
     border-radius: 12px;
     border-style: double;
@@ -340,14 +363,21 @@ body {
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     padding: 3%;
     line-height: 120%;
+    /* color: whitesmoke; */
 }
 .frozen-modal>h1 {
     text-align: center;
     margin: 10px 0 0 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
 .frozen-modal>h3 {
     text-align: center;
     margin: 20px auto;
+    color: rgb(238, 31, 186);
+    font-weight: 700;
 }
 .frozen-choices {
     display: flex;
@@ -389,7 +419,9 @@ body {
     display: none;
 }
 .bts-modal {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-image: url('images/bts_logo.jpg');
+    background-size: cover;
     height: 530px;
     width: 700px;
     border-radius: 12px;
@@ -402,6 +434,10 @@ body {
 .bts-modal>h1 {
     text-align: center;
     margin: 10px 0 0 15px;
+    font-family: 'Black Ops One', cursive;
+    font-size: 60px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
 }
 .bts-modal>h3 {
     text-align: center;
@@ -461,10 +497,15 @@ body {
 .britney-modal>h1 {
     text-align: center;
     margin: 10px 0 0 15px;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 65px;
+    padding-bottom: 20px;
+    color: black;
 }
 .britney-modal>h3 {
     text-align: center;
     margin: 20px auto;
+    color: rgb(219, 150, 85);
 }
 .britney-choices {
     display: flex;
@@ -475,11 +516,16 @@ body {
 .britney-btns {
     margin: 10px auto;
     cursor: pointer;
-    height: 100px; 
-    width: 210px; 
+    height: 90px; 
+    width: 200px; 
     border-radius: 10px;
     background-size: cover;
     margin: 10px;
+    font-size: 20px;
+    font-family: 'Vesper Libre', serif;
+    color: whitesmoke;
+    background-color: rgba(151, 59, 47, 0.8);
+    border-color: black;
 }
 #back-btn6 {
     text-align: left;
@@ -514,6 +560,9 @@ body {
 .collab-modal>h1 {
     text-align: center;
     margin: 10px 0 0 15px;
+    font-family: 'Cherry Swash', cursive;
+    font-size: 55px;
+    padding-bottom: 10px;
 }
 .collab-modal>h3 {
     text-align: center;
@@ -533,6 +582,10 @@ body {
     border-radius: 10px;
     background-size: cover;
     margin: 10px;
+    font-size: 20px;
+    color: gold;
+    font-family: 'Jacques Francois Shadow', cursive;
+    background-color: rgba(24, 20, 2, 0.7);
 }
 #back-btn7 {
     text-align: left;
