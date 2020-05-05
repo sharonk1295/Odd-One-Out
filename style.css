@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     /* outline: 2px solid thistle; */
 }
-
+/* html {
+    font-size: 10px; 
+} */
 body {
     background: repeating-linear-gradient(
     to right,
@@ -12,6 +14,7 @@ body {
     #B5BDCA 120px,
     #B17693 50px,
     #B17693 60px);
+    box-sizing: border-box;
     /* background-color: rgb(221,227,109);  #B5BDCA, #B17693*/
     /* background-color: rgb(44, 114, 143); */
 }
@@ -19,9 +22,9 @@ body {
 /* ===== HOME PAGE ===== */
 
 .header {
+    position: relative;
     text-align: center;
     margin-top: 30%;
-    /* position: relative; */
 }
 /* to make home page not move when you expand the browser */
 /* .home-page {
@@ -30,6 +33,7 @@ body {
 } */
 .home-page-text {
     line-height: 70px;
+    /* position: absolute; */
 }
 .home-page-text>h1 {
     font-family: 'Luckiest Guy', cursive;
@@ -260,6 +264,10 @@ body {
     background-size: cover;
     outline: none;
 }
+.office-btns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
 #jim {
     background-image: url("images/officejim.jpg");
 }
@@ -324,6 +332,10 @@ body {
     border-radius: 10px;
     background-size: cover;
     outline: none;
+}
+.marvel-btns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 #captain {
     background-image: url('images/marvelcaptain.jpg');
@@ -391,6 +403,10 @@ body {
     background-size: cover;
     outline: none;
 }
+.frozen-btns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
 #troll {
     background-image: url('images/frozentroll.png');
 }
@@ -454,6 +470,10 @@ body {
     border-radius: 10px;
     background-size: cover;
     outline: none;
+}
+.bts-btns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 #jungkook {
     background-image: url('images/btsjungkook.jpg');
@@ -525,6 +545,10 @@ body {
     border-color: black;
     outline: none;
 }
+.britney-btns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
 #back-btn6 {
     text-align: left;
     margin-top: 60px;
@@ -585,7 +609,57 @@ body {
     background-color: rgba(24, 20, 2, 0.7);
     outline: none;
 }
+.collab-btns:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
 #back-btn7 {
     text-align: left;
     margin-top: 60px;
+}
+
+/* ===== WIN/LOSE MESSAGES ===== */
+.win-game {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.win-game-modal {
+    background-color: whitesmoke;
+    height: 520px;
+    width: 680px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+.lose-game {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.lose-game-modal {
+    background-color: whitesmoke;
+    height: 520px;
+    width: 680px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
 }

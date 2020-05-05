@@ -3,7 +3,7 @@
 
 
 $(() => {
-    // Variables
+    // ======== Variables =========
     const $openBtn = $('#lets-go');
     const $instructions = $('.instructions');
     const $closeBtn = $('#close-inst-btn');
@@ -22,7 +22,7 @@ $(() => {
 
     
 
-    // Functions/ Event Handlers 
+    // ========== Functions/ Event Handlers =========
     const openInstructions = () => {
         // console.log('working')
         $instructions.css('display', 'block');
@@ -89,8 +89,14 @@ $(() => {
         $('.collab').css('display', 'none');
         $categoryPage.css('display', 'block');
     }
+    const returnHome1 = () => {
+        $('.win-game').css('display', 'none');
+    }
+    const returnHome2 = () => {
+        $('.lose-game').css('display', 'none');
+    }
 
-    // Event Listeners
+    // ========= Event Listeners =========
     $openBtn.on('click', openInstructions);
     $closeBtn.on('click', goToCategories);
     $backBtn1.on('click', returnFromCatToInst);
@@ -106,4 +112,84 @@ $(() => {
     $backBtn6.on('click', returnFromBritneyToCat);
     $('#featured').on('click', openCollaborations);
     $backBtn7.on('click', returnFromCollabToCat);
+
+    // ======== Game Choices =========
+    //office
+    $('#chris').on('click', () => {
+        $('.the-office').hide();
+        $('.win-game').show();
+        setTimeout(returnHome1, 3000);
+    });
+    const $officeWrongChoice = $('.office-wrong')
+    $officeWrongChoice.on('click', () => {
+        $('.the-office').hide();
+        $('.lose-game').css('display', 'block');
+        setTimeout(returnHome2, 3000);
+    })
+
+    //marvel
+    $('#batman').on('click', () => {
+        $('.marvel-avengers').hide();
+        $('.win-game').show();
+        setTimeout(returnHome1, 3000);
+    });
+    const $marvelWrongChoice = $('.marvel-wrong')
+    $marvelWrongChoice.on('click', () => {
+        $('.marvel-avengers').hide();
+        $('.lose-game').css('display', 'block');
+        setTimeout(returnHome2, 3000);
+    })
+
+    //frozen
+    $('#tangled').on('click', () => {
+        $('.frozen-film').hide();
+        $('.win-game').show();
+        setTimeout(returnHome1, 3000);
+    });
+    const $frozenWrongChoice = $('.frozen-wrong')
+    $frozenWrongChoice.on('click', () => {
+        $('.frozen-film').hide();
+        $('.lose-game').css('display', 'block');
+        setTimeout(returnHome2, 3000);
+    })
+
+    //bts
+    $('#sehun').on('click', () => {
+        $('.BTS-members').hide();
+        $('.win-game').show();
+        setTimeout(returnHome1, 3000);
+    });
+    const $btsWrongChoice = $('.bts-wrong')
+    $btsWrongChoice.on('click', () => {
+        //console.log('jungkook')
+        $('.BTS-members').hide();
+        $('.lose-game').css('display', 'block');
+        setTimeout(returnHome2, 3000);
+    })
+
+    //britney
+    $('#dualipa').on('click', () => {
+        $('.britney-songs').hide();
+        $('.win-game').show();
+        setTimeout(returnHome1, 3000);
+    });
+    const $britneyWrongChoice = $('.britney-wrong')
+    $britneyWrongChoice.on('click', () => {
+        $('.britney-songs').hide();
+        $('.lose-game').css('display', 'block');
+        setTimeout(returnHome2, 3000);
+    })
+
+    //collaborations
+    $('#edsheeran').on('click', () => {
+        $('.collab').hide();
+        $('.win-game').show();
+        setTimeout(returnHome1, 3000);
+    });
+    const $collabWrongChoice = $('.collab-wrong')
+    $collabWrongChoice.on('click', () => {
+        $('.collab').hide();
+        $('.lose-game').css('display', 'block');
+        setTimeout(returnHome2, 3000);
+    })
 })
