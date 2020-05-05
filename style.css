@@ -317,6 +317,7 @@ body {
 .marvel-modal>h3 {
     text-align: center;
     margin: 20px auto;
+    text-shadow: 1px 1px rgb(204, 198, 197);
 }
 .marvel-choices {
     display: flex;
@@ -385,7 +386,8 @@ body {
 .frozen-modal>h3 {
     text-align: center;
     margin: 20px auto;
-    color: rgb(238, 31, 186);
+    color: rgb(36, 52, 199);
+    text-shadow: 2px 2px rgb(235, 230, 229);
     font-weight: 700;
 }
 .frozen-choices {
@@ -455,6 +457,8 @@ body {
 .bts-modal>h3 {
     text-align: center;
     margin: 20px auto;
+    color: black;
+    text-shadow: 1px 1px rgb(212, 152, 224);
 }
 .BTS-choices {
     display: flex;
@@ -522,7 +526,8 @@ body {
 .britney-modal>h3 {
     text-align: center;
     margin: 20px auto;
-    color: rgb(219, 150, 85);
+    color: rgb(160, 58, 17);
+    text-shadow: 2px 2px rgb(224, 171, 164);
 }
 .britney-choices {
     display: flex;
@@ -588,6 +593,7 @@ body {
 .collab-modal>h3 {
     text-align: center;
     margin: 20px auto;
+    text-shadow: 1px 1px rgb(71, 70, 71);
 }
 .collab-choices {
     display: flex;
@@ -631,8 +637,10 @@ body {
     display: none;
 }
 .win-game-modal {
-    background-color: whitesmoke;
-    height: 520px;
+    background-image: url('images/trophy.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 530px;
     width: 680px;
     border-radius: 12px;
     border-style: double;
@@ -640,6 +648,13 @@ body {
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     padding: 3%;
     line-height: 120%;
+}
+.win-game-modal>h2 {
+    font-family: 'Calistoga', cursive;
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 28%;
 }
 .lose-game {
     background-color: rgba(0,0,0,0.4);
@@ -653,8 +668,10 @@ body {
     display: none;
 }
 .lose-game-modal {
-    background-color: whitesmoke;
-    height: 520px;
+    background-image: url('images/lose_img.png');
+    background-size: cover;
+    background-position: center;
+    height: 510px;
     width: 680px;
     border-radius: 12px;
     border-style: double;
@@ -662,4 +679,11 @@ body {
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     padding: 3%;
     line-height: 120%;
+}
+.lose-game-modal>h2 {
+    font-family: 'Barrio', cursive;
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 9%;
 }
