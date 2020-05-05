@@ -136,7 +136,6 @@ body {
     letter-spacing: 2px;
     text-transform: capitalize;
     font-family: 'Monoton', cursive;
-    /* font-family: 'Fredericka the Great', cursive; */
 }
 .pick-category {
     display: flex;
@@ -155,6 +154,7 @@ body {
     text-align: center;
     text-decoration-line: underline;
     text-decoration-style: double;
+    margin-bottom: 10px;
 }
 .tv-movie-choices {
     display: flex;
@@ -172,6 +172,7 @@ body {
     text-align: center;
     text-decoration-line: underline;
     text-decoration-style: double;
+    margin-bottom: 10px;
 }
 .music-choices {
     display: flex;
@@ -191,10 +192,9 @@ body {
     letter-spacing: 3px;
     cursor: pointer;
     width: 14em;
-    /* outline: 2px dashed rgb(192, 184, 184); */
+    outline: none;
 }
 .category-buttons:hover {
-    /* background-color: rgb(223, 168, 236); */
     background-color: rgb(82, 189, 114);
 }
 .back-btn {
@@ -252,15 +252,13 @@ body {
     margin-top: 35px;
 }
 .office-btns {
-    /* display: flex;
-    justify-content: space-around; */
-    /* padding: 40px; */
     margin: 10px auto;
     cursor: pointer;
     height: 150px; 
     width: 220px; 
     border-radius: 10px;
     background-size: cover;
+    outline: none;
 }
 #jim {
     background-image: url("images/officejim.jpg");
@@ -325,6 +323,7 @@ body {
     width: 220px; 
     border-radius: 10px;
     background-size: cover;
+    outline: none;
 }
 #captain {
     background-image: url('images/marvelcaptain.jpg');
@@ -352,7 +351,6 @@ body {
     display: none;
 }
 .frozen-modal {
-    /* background-color: whitesmoke; */
     background-image: url('images/frozen_snowflake.jpg');
     background-size: cover;
     height: 535px;
@@ -363,7 +361,6 @@ body {
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     padding: 3%;
     line-height: 120%;
-    /* color: whitesmoke; */
 }
 .frozen-modal>h1 {
     text-align: center;
@@ -392,6 +389,7 @@ body {
     width: 220px; 
     border-radius: 10px;
     background-size: cover;
+    outline: none;
 }
 #troll {
     background-image: url('images/frozentroll.png');
@@ -419,7 +417,6 @@ body {
     display: none;
 }
 .bts-modal {
-    /* background-color: whitesmoke; */
     background-image: url('images/bts_logo.jpg');
     background-size: cover;
     height: 530px;
@@ -456,6 +453,7 @@ body {
     width: 220px; 
     border-radius: 10px;
     background-size: cover;
+    outline: none;
 }
 #jungkook {
     background-image: url('images/btsjungkook.jpg');
@@ -482,7 +480,6 @@ body {
     display: none;
 }
 .britney-modal {
-    /* background-color: whitesmoke; */
     background-image: url('images/britney.jpg');
     background-size: cover;
     height: 530px;
@@ -516,7 +513,7 @@ body {
 .britney-btns {
     margin: 10px auto;
     cursor: pointer;
-    height: 90px; 
+    height: 95px; 
     width: 200px; 
     border-radius: 10px;
     background-size: cover;
@@ -526,6 +523,7 @@ body {
     color: whitesmoke;
     background-color: rgba(151, 59, 47, 0.8);
     border-color: black;
+    outline: none;
 }
 #back-btn6 {
     text-align: left;
@@ -545,7 +543,6 @@ body {
     display: none;
 }
 .collab-modal {
-    /* background-color: whitesmoke; */
     background-image: url('images/music_notes.png');
     background-size: cover;
     height: 530px;
@@ -586,6 +583,7 @@ body {
     color: gold;
     font-family: 'Jacques Francois Shadow', cursive;
     background-color: rgba(24, 20, 2, 0.7);
+    outline: none;
 }
 #back-btn7 {
     text-align: left;
