@@ -119,8 +119,8 @@ body {
 }
 .category-page {
     background-color: whitesmoke;
-    height: 500px;
-    width: 650px;
+    height: 520px;
+    width: 680px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -196,6 +196,7 @@ body {
     text-align: left;
     padding: 6px;
     border-radius: 3px;
+    margin-bottom: 3px;
 }
 
 /* ===== THE OFFICE ===== */
@@ -431,4 +432,109 @@ body {
 }
 #jimin {
     background-image: url('images/btsjimin.jpg');
+}
+/* ===== BRITNEY SPEARS ===== */
+.britney-songs {
+    background-color: rgba(145, 141, 141, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.britney-modal {
+    /* background-color: whitesmoke; */
+    background-image: url('images/britney.jpg');
+    background-size: cover;
+    height: 530px;
+    width: 700px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+.britney-modal>h1 {
+    text-align: center;
+    margin: 10px 0 0 15px;
+}
+.britney-modal>h3 {
+    text-align: center;
+    margin: 20px auto;
+}
+.britney-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.britney-btns {
+    margin: 10px auto;
+    cursor: pointer;
+    height: 100px; 
+    width: 210px; 
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px;
+}
+#back-btn6 {
+    text-align: left;
+    margin-top: 60px;
+}
+
+/* ===== COLLABORATIONS ===== */
+.collab {
+    background-color: rgba(145, 141, 141, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.collab-modal {
+    /* background-color: whitesmoke; */
+    background-image: url('images/music_notes.png');
+    background-size: cover;
+    height: 530px;
+    width: 700px;
+    border-radius: 12px;
+    border-style: double;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 3%;
+    line-height: 120%;
+}
+.collab-modal>h1 {
+    text-align: center;
+    margin: 10px 0 0 15px;
+}
+.collab-modal>h3 {
+    text-align: center;
+    margin: 20px auto;
+}
+.collab-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.collab-btns {
+    margin: 10px auto;
+    cursor: pointer;
+    height: 100px; 
+    width: 210px; 
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px;
+}
+#back-btn7 {
+    text-align: left;
+    margin-top: 60px;
 }

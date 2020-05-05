@@ -18,6 +18,7 @@ $(() => {
     const $backBtn4 = $('#back-btn4');
     const $backBtn5 = $('#back-btn5');
     const $backBtn6 = $('#back-btn6');
+    const $backBtn7 = $('#back-btn7');
 
     
 
@@ -72,6 +73,22 @@ $(() => {
         $('.BTS-members').css('display', 'none');
         $categoryPage.css('display', 'block');
     }
+    const openBritney = () => {
+        $('.britney-songs').css('display', 'block');
+        $categoryPage.css('display', 'none');
+    }
+    const returnFromBritneyToCat = () => {
+        $('.britney-songs').css('display', 'none');
+        $categoryPage.css('display', 'block');
+    }
+    const openCollaborations = () => {
+        $('.collab').css('display', 'block');
+        $categoryPage.css('display', 'none');
+    }
+    const returnFromCollabToCat = () => {
+        $('.collab').css('display', 'none');
+        $categoryPage.css('display', 'block');
+    }
 
     // Event Listeners
     $openBtn.on('click', openInstructions);
@@ -85,5 +102,8 @@ $(() => {
     $backBtn4.on('click', returnFromFrozenToCat);
     $('#BTS').on('click', openBTS);
     $backBtn5.on('click', returnFromBtsToCat);
-
+    $('#britney').on('click', openBritney);
+    $backBtn6.on('click', returnFromBritneyToCat);
+    $('#featured').on('click', openCollaborations);
+    $backBtn7.on('click', returnFromCollabToCat);
 })
