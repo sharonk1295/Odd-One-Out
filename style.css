@@ -4,9 +4,7 @@
     box-sizing: border-box;
     /* outline: 2px solid thistle; */
 }
-/* html {
-    font-size: 10px; 
-} */
+
 body {
     background: repeating-linear-gradient(
     to right,
@@ -18,33 +16,16 @@ body {
 
 /* ===== HOME PAGE ===== */
 .header {
-    /* display: inline-block; */
     text-align: center;
-    /* margin-top: 30%; */
-    max-width: 1500px;
+    max-width: 1530px;
     height: 900px;
-    /* background-color: blue; */
-    padding-top: 300px;
-    
-}
-/* .home-page {
-    position: absolute; 
-    text-align: center;
-    top: 1em;
-    left: 10em;
-    border: 1px solid black;
-} */
-.home-page-text {
-    /* line-height: 70px; */
-    /* position: absolute; */
+    padding-top: 310px;
 }
 .home-page-text>h1 {
     font-family: 'Luckiest Guy', cursive;
     font-size: 130px;
     color: rgb(54, 38, 38);
     text-shadow: 2px 2px #B5BDCA;
-    /* position: absolute; */
-     /* text-align: center; */
 }
 .weird {
     color: red;
@@ -71,10 +52,10 @@ body {
 }
 .instructions-text {
     background-color: whitesmoke;
-    height: 350px;
-    width: 550px;
+    max-height: 390px;
+    max-width: 600px;
     border-radius: 12px;
-    margin: 150px auto;
+    margin: 160px auto;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     padding: 3%;
     line-height: 120%;
@@ -85,7 +66,7 @@ body {
 }
 .instructions-btn {
     text-align: right;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 .header-buttons {
     padding: 14px 18px;
@@ -124,8 +105,8 @@ body {
 }
 .category-page {
     background-color: whitesmoke;
-    height: 520px;
-    width: 680px;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -230,8 +211,8 @@ body {
 }
 .office-modal {
     background-color: rgb(205, 181, 137);
-    height: 530px;
-    width: 700px;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -295,11 +276,10 @@ body {
     display: none;
 }
 .marvel-modal {
-    /* background-color: whitesmoke; */
     background-image: url('images/avengers.jpg');
     background-size: cover;
-    height: 530px;
-    width: 700px;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -367,8 +347,8 @@ body {
 .frozen-modal {
     background-image: url('images/frozen_snowflake.jpg');
     background-size: cover;
-    height: 535px;
-    width: 700px;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -438,8 +418,9 @@ body {
 .bts-modal {
     background-image: url('images/bts_logo.jpg');
     background-size: cover;
-    height: 530px;
-    width: 700px;
+    background-position: center;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -507,8 +488,8 @@ body {
 .britney-modal {
     background-image: url('images/britney.jpg');
     background-size: cover;
-    height: 530px;
-    width: 700px;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
@@ -575,8 +556,8 @@ body {
 .collab-modal {
     background-image: url('images/music_notes.png');
     background-size: cover;
-    height: 530px;
-    width: 700px;
+    max-height: 550px;
+    max-width: 700px;
     border-radius: 12px;
     border-style: double;
     margin: 150px auto;
