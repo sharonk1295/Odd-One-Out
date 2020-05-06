@@ -81,7 +81,7 @@ body {
 #lets-go {
     animation-name: blink;
     animation-duration: 3s;
-    animation-iteration-count: 100;
+    animation-iteration-count: infinite;
 }
 @keyframes blink {
     0% {background-color: rgb(87, 217, 226)}
