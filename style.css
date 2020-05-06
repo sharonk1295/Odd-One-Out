@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
     /* outline: 2px solid thistle; */
 }
 /* html {
@@ -14,25 +14,28 @@ body {
     #B5BDCA 120px,
     #B17693 50px,
     #B17693 60px);
-    box-sizing: border-box;
-    /* background-color: rgb(221,227,109);  #B5BDCA, #B17693*/
-    /* background-color: rgb(44, 114, 143); */
 }
 
 /* ===== HOME PAGE ===== */
-
 .header {
-    position: relative;
+    /* display: inline-block; */
     text-align: center;
-    margin-top: 30%;
+    /* margin-top: 30%; */
+    max-width: 1500px;
+    height: 900px;
+    /* background-color: blue; */
+    padding-top: 300px;
+    
 }
-/* to make home page not move when you expand the browser */
 /* .home-page {
-    position: absolute;
+    position: absolute; 
     text-align: center;
+    top: 1em;
+    left: 10em;
+    border: 1px solid black;
 } */
 .home-page-text {
-    line-height: 70px;
+    /* line-height: 70px; */
     /* position: absolute; */
 }
 .home-page-text>h1 {
@@ -40,6 +43,8 @@ body {
     font-size: 130px;
     color: rgb(54, 38, 38);
     text-shadow: 2px 2px #B5BDCA;
+    /* position: absolute; */
+     /* text-align: center; */
 }
 .weird {
     color: red;
@@ -48,13 +53,11 @@ body {
     font-family: 'Knewave', cursive;
     letter-spacing: 2px;
     font-size: 30px;
-    /* color: rgb(54, 38, 38); */
-    /* rgb(155,79,221) */
     color: rgb(155,79,221);
+    padding-bottom: 15px;
 }
 
 /* ===== INSTRUCTIONS MODAL ===== */
-
 .instructions {
     background-color: rgba(0,0,0,0.4);
     position: fixed;
@@ -88,7 +91,6 @@ body {
     padding: 14px 18px;
     background-color: rgb(152, 171, 180);
     border: none;
-    border-radius: 3px;
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -109,7 +111,6 @@ body {
 }
 
 /* ===== CATEGORIES PAGE ===== */
-
 .main {
     background-color: rgba(0,0,0,0.4);
     position: fixed;
@@ -208,7 +209,7 @@ body {
     margin-bottom: 3px;
     background-color: rgb(37, 36, 36);
     color: white;
-    outline: 2px solid rgb(57, 162, 248);
+    outline: 2px solid rgb(27, 104, 40);
 }
 .back-btn:hover {
     background-color: whitesmoke;
